@@ -1,8 +1,8 @@
-# Advanced Currency Converter
+# Currency Converter
 
 ## Overview
 
-The Advanced Currency Converter is a sleek, user-friendly web application that allows users to perform currency conversions with real-time exchange rates. Built with HTML, CSS, and JavaScript, this tool not only converts currencies but also provides additional features to enhance the user experience.
+The Currency Converter is a sleek, user-friendly web application that allows users to perform currency conversions with real-time exchange rates. Built with HTML, CSS, and JavaScript, this tool not only converts currencies but also provides additional features to enhance the user experience.
 
 ![Currency Converter Screenshot](screenshot.png)
 
