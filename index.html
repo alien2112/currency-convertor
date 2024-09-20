@@ -3,45 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Extension</title>
+    <title>Advanced Currency Converter</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-
 </head>
 <body>
-    <h1>Exchange Rate Converter</h1>
-    <input type="number" id="amount" placeholder="Enter the amount">
-    <label for="currency">have</label>
-    <select id="currency">
-        <option value="CHF">CHF</option>
-        <option value="CNY">CNY</option>
-        <option value="CAD">CAD</option>
-        <option value="AUD">AUD</option>
-        <option value="PLN">PLN</option>
-        <option value="TRY">TRY</option>
-        <option value="NZD">NZD</option>
-        <option value="KRW">KRW</option>
-        <option value="DKK">DKK</option>
-        <option value="HKD">HKD</option>
-        <option value="GBP">GBP</option>
-    </select>
-    <label for="currency">want</label>
-    <select id="currency2">
-        <option value="CHF">CHF</option>
-        <option value="CNY">CNY</option>
-        <option value="CAD">CAD</option>
-        <option value="AUD">AUD</option>
-        <option value="PLN">PLN</option>
-        <option value="TRY">TRY</option>
-        <option value="NZD">NZD</option>
-        <option value="KRW">KRW</option>
-        <option value="DKK">DKK</option>
-        <option value="HKD">HKD</option>
-        <option value="GBP">GBP</option>
-    </select>
-
-    <button id="convert">Convert Currency</button>
-    <div id="result">result</div>
+    <div class="container">
+        <h1>Advanced Currency Converter</h1>
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Enter the amount">
+            <div class="currency-select">
+                <label for="currency">From:</label>
+                <select id="currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CNY">CNY</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="PLN">PLN</option>
+                    <option value="TRY">TRY</option>
+                    <option value="NZD">NZD</option>
+                    <option value="KRW">KRW</option>
+                    <option value="DKK">DKK</option>
+                    <option value="HKD">HKD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <div class="currency-select">
+                <label for="currency2">To:</label>
+                <select id="currency2">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CNY">CNY</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="PLN">PLN</option>
+                    <option value="TRY">TRY</option>
+                    <option value="NZD">NZD</option>
+                    <option value="KRW">KRW</option>
+                    <option value="DKK">DKK</option>
+                    <option value="HKD">HKD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <button id="convert">Convert Currency</button>
+            <div id="result">Result will appear here</div>
+        </div>
+        <div class="balance-section">
+            <h2>Current Balance</h2>
+            <input type="number" id="balance" placeholder="Enter your balance">
+            <select id="balance-currency">
+                <!-- Currency options will be dynamically populated -->
+            </select>
+            <button id="update-balance">Update Balance</button>
+            <div id="balance-display">Your current balance: N/A</div>
+        </div>
+        <div class="history-section">
+            <h2>Conversion History</h2>
+            <ul id="history-list"></ul>
+            <button id="clear-history">Clear History</button>
+        </div>
+    </div>
+    <script src="exchange.js"></script>
 </body>
-<script src="exchange.js"></script>
-
 </html>
